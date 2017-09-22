@@ -11,11 +11,8 @@ describe('greet', () => {
     it('should not accept non string values as arguments', () => {
 
       let result = greet(42);
-      let nope = 'nice try';
-      let sorry = greet(nope);
 
       expect(result).toBe(null);
-      expect(sorry).toBe(null);
     });
   });
 
